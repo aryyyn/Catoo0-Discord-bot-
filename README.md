@@ -12,5 +12,5 @@ Tag the bot to roast someone [@catoo0] (add your custom roasts through the bot)
  !cat - cat img/gif 
  !catf - random cat fact 
  gn - sends a good night test 
- !amigay - checks if the user is gay 
+ !wor - checks if the user is wright or wrong 
  !meme - sends a random meme
