@@ -72,11 +72,11 @@ async def on_message(message):
     
        
     
-    if msg.lower() == 'amigay' and a == 1:
+    if msg.lower() == '!wor' and a == 1:
       
-      await message.channel.send(f'{user} is gay')
-    if msg.lower() == 'amigay' and a == 0:
-        await message.channel.send(f'{user} is straight')
+      await message.channel.send(f'{user} is right')
+    if msg.lower() == '!wor' and a == 0:
+        await message.channel.send(f'{user} is wrong')
     
     
     
@@ -126,7 +126,7 @@ async def on_message(message):
     
      
     if message.content.startswith('./help'):
-      await message.channel.send("Tag the bot to roast someone [@catoo0] \n !dog - dog img/gif \n !cat - cat img/gif \n !catf - random cat fact \n gn - sends a good night test \n !amigay - checks if the user is gay \n !meme - sends a random meme")
+      await message.channel.send("Tag the bot to roast someone [@catoo0] \n !dog - dog img/gif \n !cat - cat img/gif \n !catf - random cat fact \n gn - sends a good night test \n !wor - checks if the user is right or wrong \n !meme - sends a random meme")
       print('sent')
       return
    
