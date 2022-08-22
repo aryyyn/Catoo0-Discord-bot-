@@ -87,44 +87,7 @@ async def on_message(message):
 
 
 
-    elif msg.lower() == 'samosa dai':
-         await message.channel.send('gayo aryn ko chak ma')
-         return
-         print("message sent")
    
-   
-    
-    elif msg.lower() == 'pocky':
-     await message.channel.send('gayo akatora ko chak ma')
-
-    elif msg.lower() == 'ako':
-     await message.channel.send('gayo original dai ko chak ma')
-
-    elif msg.lower() == 'shrikant':
-     await message.channel.send('gayo pocky ko chak ma')
-     
-    elif msg.lower() == 'kadota':
-     await message.channel.send('gayo samosa dai ko chak ma')
-
-    elif msg.lower() == 'yuujin':
-     await message.channel.send('gayo pocky ko chak ma')
-
-    elif msg.lower() == 'rocklee':
-     await message.channel.send('gayo samosa dai ko chak ma')
-
-    elif msg.lower() == 'nitrix':
-     await message.channel.send('gayo aryn dai ko chak ma')
-
-    elif msg.lower() == 'akatora':
-     await message.channel.send('gayo mailidd ko chak ma')
-
-    elif msg.lower() == 'sit':
-     await message.channel.send(f'sit on deez nutz {user}')
-
-    elif msg.lower() == 'aryn':
-     await message.channel.send('gayo ako daddy ko ghar ma')
-
-
   
     ch = client.get_channel(905343313547259945)
    
