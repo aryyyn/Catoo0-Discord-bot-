@@ -15,26 +15,7 @@ TOKEN = os.getenv('DISCORD_TOKEN')
 
 client = discord.Client(intents=discord.Intents.all())
 
-test_list = ['pocky x kadota',
-'ok and?',
-'go back to roblox, mr lee',
-'aryn gets more bitches than you',
-'pocky ko chak ma jane ho?',
-'listening to nitrix clapping eldiablos butt',
-'bro shut up, im playing with aryns huge pp',
-'bro shut up, im playing with shrikants small pp',
-'bro shut up, im playing with kadotas fat pp',
-'so today game night or movie night?',
-'timi gay ho',
-'your mom my aunt',
-'maths sikne',
-'sutna dey na lado',
-'bahun mug, ja gaera khutta ko jhyau katera aija paila',
-'kolle sodhyo mug talai?',
-'padhna ja mug',
-'https://discord.gg/cvNa9XTbD9',
-'sathi chaina mug tero?',
-'ja gaera aryn ko lado chus',
+test_list = ['pocky',
 ':evil:',
 'when nitro, ako?',
 
