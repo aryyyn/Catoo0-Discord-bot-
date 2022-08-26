@@ -126,10 +126,16 @@ async def on_message(message):
          
 
      
-    if message.content.startswith('./help'):
-      await message.channel.send("Tag the bot to roast someone [@catoo0] \n !dog - dog img/gif \n !cat - cat img/gif \n !catf - random cat fact \n gn - sends a good night test \n !amigay - checks if the user is gay \n !meme - sends a random meme \n !joke - sends a random joke \n !age - bot age \n !fact - sends a random interesting fact")
+    if message.content.startswith('./help' or './HELP' or './Help'):
+      await message.delete()
+      await message.channel.send("``` Tag the bot to roast someone [@catoo0] \n !dog - dog img/gif \n !cat - cat img/gif \n !catf - random cat fact \n gn - sends a good night test \n !amigay - checks if the user is gay \n !meme - sends a random meme \n !joke - sends a random joke \n !age - bot age \n !fact - sends a random interesting fact \n !cboy - catboy pictures for ako \n !yomama - sends a yommama joke \n !waifu or !2waifu - waifus ofc lol \n !kill - use this to kill someone \n !bully -  use this to bully someone \n !kiss - only for ako <3  \n !roast - roast someone \n !food - random images of food \n !weather - displays the weather \n !cry - cry, nobody cares about you anyway \n !genshin genshim images ig \n !bonk - bonk someone \n !nom - nom nom nom \n !talk! - talk with someone \n !fight! - challenge someone to a fight \n !rolldice! - challenge someone to a dice battle ``` \n  ``` ./memehelp for meme maker commands``` \n \n - ``aryn#5511``")
       print('sent')
       return
+
+    if message.content.startswith('./memehelp' or './MEMEHELP' or './Memehelp'):
+     await message.delete()
+     await message.channel.send("``` !gordon! \n !drake! \n !peter! \n !meeting! \n !skeleton! \n !tys! \n !2buttons! ``` ")
+     return
    
 
     if message.content.startswith('!joke'):
@@ -400,6 +406,310 @@ async def on_message(message):
 
         await message.channel.send('https:' + mama301122)
         return
+       
+       if message.content.startswith('!flirt'):
+        data777 = requests.get('http://getpickuplines.herokuapp.com/lines/random').text
+
+        txt777 = str(data777).split(':')
+
+        
+
+        mama777 = (txt777[2]).replace('"', '').replace('"}', '').replace('}', '')
+
+        await message.channel.send(mama777)
+        return
+
+      #https://c.tenor.com/dLjTriTF5p0AAAAd/call-an.gif
+    if message.content.startswith('!rebibe'):
+     await message.channel.send('https://c.tenor.com/dLjTriTF5p0AAAAd/call-an.gif')
+
+
+     #https://api.waifu.pics/sfw/nom
+
+    if message.content.startswith('!nom'):
+        data3011 = requests.get('https://api.waifu.pics/sfw/nom').text
+
+        txt3011 = str(data3011).split(':')
+
+      
+
+        
+
+        mama3011 = (txt3011[2]).replace('"', '').replace('}"', '').replace('}', '')
+
+        await message.channel.send('https:' + mama3011)
+        return
+
+
+    if message.content.startswith('!kick'):
+        data3011 = requests.get('https://api.waifu.pics/sfw/kick').text
+
+        txt3011 = str(data3011).split(':')
+
+      
+  
+        
+
+        mama3011 = (txt3011[2]).replace('"', '').replace('}"', '').replace('}', '')
+
+        await message.channel.send('https:' + mama3011)
+        return
+
+      #https://api.waifu.pics/sfw/slap
+    if message.content.startswith('!slap'):
+        data3011 = requests.get('https://api.waifu.pics/sfw/slap').text
+
+        txt3011 = str(data3011).split(':')
+
+      
+  
+        
+
+        mama3011 = (txt3011[2]).replace('"', '').replace('}"', '').replace('}', '')
+
+        await message.channel.send('https:' + mama3011)
+        return
+
+
+        #https://api.waifu.pics/sfw/bonk
+
+    if message.content.startswith('!bonk'):
+        data3011 = requests.get('https://api.waifu.pics/sfw/bonk').text
+
+        txt3011 = str(data3011).split(':')
+
+        
+
+        mama3011 = (txt3011[2]).replace('"', '').replace('}"', '').replace('}', '')
+
+        await message.channel.send('https:' + mama3011)
+        return
+
+
+    if msg.lower() == 'gm':
+         await message.channel.send(f"GoodMorning {message.author.mention}")
+
+      #https://api.waifu.pics/sfw/pat 
+  
+    if message.content.startswith('!pat'):
+        data3011 = requests.get('https://api.waifu.pics/sfw/pat').text
+
+        txt3011 = str(data3011).split(':')
+
+        
+
+        mama3011 = (txt3011[2]).replace('"', '').replace('}"', '').replace('}', '')
+
+        await message.channel.send('https:' + mama3011)
+        return
+
+    
+      
+    if message.content.startswith('!join'):
+      
+            channel = message.author.voice.channel
+            await channel.connect()
+            return
+        
+      
+
+
+
+    
+   
+   
+    if message.content.startswith("lado" or "test"):
+             if message.author != client.user:
+              await message.delete()
+              await message.channel.send( message.author.mention + " You cant use that here buddy!")
+             
+             return
+
+       
+    if message.content.startswith("!say!"):
+        try:
+            await message.delete()
+            rl = message.content.split('!')[2]
+           
+            
+            await message.channel.send(rl)
+           
+
+        except Exception as err:
+            print(err)
+            return  
+
+
+    if message.content.startswith('!fight!'):
+        try:
+            r2 = message.content.split('!')[2]
+            coaa = random.randint(0, 1)
+            if coaa == 1:
+               await message.channel.send("You have won the fight!")
+            if coaa == 0:
+               await  message.channel.send(r2 + " has won the fight!")
+                  
+            
+        except:
+            await message.channel.send("Enter the name of the user you want to fight first")
+            return   
+
+          #https://api.catboys.com/dice
+    if message.content.startswith('!rolldice!'):
+
+     try:
+        r2 = message.content.split('!')[2]
+        data3011 = requests.get('https://api.catboys.com/dice').text
+
+        txt3011 = str(data3011).split(':')
+
+        
+
+        mama3011 = (txt3011[3]).replace('","error', '').replace('"', '').replace('none}', 'your dice dead lol, try again')
+
+        data30111 = requests.get('https://api.catboys.com/dice').text
+
+        txt30111 = str(data30111).split(':')
+
+        
+
+        mama30111 = (txt30111[3]).replace('","error', '').replace('"', '').replace('none}', 'your dice dead lol, try again')
+        await message.channel.send('Your dice')
+        await message.channel.send('https:' + mama3011)
+        await message.channel.send(r2 + "'s dice")
+        await message.channel.send('https:' + mama30111)
+        if data3011 == data30111:
+            await message.channel.send("draw")
+
+        return
+
+     except:
+        await message.channel.send(f"{message.author.mention}, \n !rolledice! is the syntax for this command \n Enter the command first and then the name of the person")
+        
+    if message.content.startswith('!baka'):
+
+  
+        
+        data3011 = requests.get('https://api.catboys.com/baka').text
+
+        txt3011 = str(data3011).split(':')
+        mama3011 = (txt3011[2]).replace('","error', '').replace('"', '')
+        await message.channel.send('https:' + mama3011)
+        return
+
+    if message.content.startswith('!gordon!'):
+     try:
+        await message.delete()
+        w1 = message.content.split('!')[2]
+        w2 = message.content.split('!')[3]
+        await message.channel.send('https://apimeme.com/meme?meme=Chef-Gordon-Ramsay&top='+w1+'&bottom='+w2)
+     
+     except:
+        await message.channel.send("The command syntax is !gordon!(topmessage)!(bottomessage)")
+
+
+    
+
+     
+        #http://apimeme.com/meme?meme=Drake-Bad-Good&top=Top+text&bottom=Bottom+text
+
+    if message.content.startswith('!drake!'):
+     try:
+       
+        await message.delete()
+        w1 = message.content.split('!')[2]
+        w2 = message.content.split('!')[3]
+        await message.channel.send('https://apimeme.com/meme?meme=Drake-Bad-Good&top='+w1+'&bottom='+w2)
+     
+     except:
+        await message.channel.send("The command syntax is !drake!(topmessage)!(bottomessage)")
+
+
+    if message.content.startswith('!peter!'):
+     try:
+        await message.delete()
+        w1 = message.content.split('!')[2]
+        w2 = message.content.split('!')[3]
+        await message.channel.send('https://apimeme.com/meme?meme=Family-Guy-Peter&top='+w1+'&bottom='+w2)
+     
+     except:
+        await message.channel.send("The command syntax is !peter!(topmessage)!(bottomessage)")
+
+
+    if message.content.startswith('!meeting!'):
+     try:
+        await message.delete()
+        w1 = message.content.split('!')[2]
+        w2 = message.content.split('!')[3]
+        await message.channel.send('https://apimeme.com/meme?meme=Alien-Meeting-Suggestion&top='+w1+'&bottom='+w2)
+     
+     except:
+        await message.channel.send("The command syntax is !meeting!(topmessage)!(bottomessage)")
+
+
+
+    if message.content.startswith('!skeleton!'):
+     try:
+        await message.delete()
+        w1 = message.content.split('!')[2]
+        w2 = message.content.split('!')[3]
+        await message.channel.send('https://apimeme.com/meme?meme=Waiting-Skeleton&top='+w1+'&bottom='+w2)
+     
+     except:
+        await message.channel.send("The command syntax is !skeleton!(topmessage)!(bottomessage)")
+
+
+    if message.content.startswith('!tys!'):
+     try:
+        await message.delete()
+        w1 = message.content.split('!')[2]
+        w2 = message.content.split('!')[3]
+        await message.channel.send('https://apimeme.com/meme?meme=X-Everywhere&top='+w1+'&bottom='+w2)
+     
+     except:
+        await message.channel.send("The command syntax is !tys!(topmessage)!(bottomessage)")
+
+
+    if message.content.startswith('!2buttons!'):
+     try:
+        await message.delete()
+        w1 = message.content.split('!')[2]
+        w2 = message.content.split('!')[3]
+        await message.channel.send('https://apimeme.com/meme?meme=Two-Buttons&top='+w1+'&bottom='+w2)
+     
+     except:
+        await message.channel.send("The command syntax is !2buttons!(topmessage)!(bottomessage)")
+
+
+    if message.content.startswith("!play"):
+        try:
+            voice_client = await message.author.voice.channel.connect()
+            voice_clients[voice_client.guild.id] = voice_client
+        except:
+            print("error")
+
+        try:
+            url = message.content.split()[1]
+
+            loop = asyncio.get_event_loop()
+            data = await loop.run_in_executor(None, lambda: ytdl.extract_info(url, download=False))
+
+            song = data['url']
+            player = discord.FFmpegPCMAudio(song, **ffmpeg_options)
+            await message.channel.send("Joined")
+            voice_clients[message.guild.id].play(player)
+
+        except Exception as err:
+            print(err)
+
+
+    if message.content.startswith("!stop"):
+        try:
+            voice_clients[message.guild.id].stop()
+            await voice_clients[message.guild.id].disconnect()
+            await message.channel.send("Bot has been disconnected.")
+        except Exception as err:
+            print(err)
 
 
 client.run(TOKEN)
