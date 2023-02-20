@@ -78,17 +78,7 @@ async def on_message(message):
     
        
     
-    if msg.lower() == 'amigay' and a == 1:
-      
-      await message.channel.send(f'{user} is gay')
-    if msg.lower() == 'amigay' and a == 0:
-        await message.channel.send(f'{user} is straight')
-    
 
-    if client.user.mentioned_in(message):
-
-      
-      await message.channel.send(random_num)
 
     if msg.lower() == 'gn':
          await message.channel.send(f"GoodNight {message.author.mention}")
@@ -211,7 +201,7 @@ async def on_message(message):
 
 
   #https://place.dog/300/200
-    if message.content.startswith('!gaydog'):
+    if message.content.startswith('!dog'):
         data23 = requests.get('https://place.dog/300/200g').text
 
         
@@ -276,18 +266,7 @@ async def on_message(message):
   
 
          
-        
-    if  ch and message.content.startswith('!nwaifu') :
-        data30 = requests.get('https://api.waifu.pics/nsfw/waifu').text
-         
-        txt30 = str(data30).split(':')
-
-      
-        
-        mama77 = (txt30[2]).replace('"', '').replace('}"', '').replace('}', '')
-        await ch.send('https:' + mama77)   
-
-        return
+   
     
     
   
